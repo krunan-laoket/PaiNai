@@ -1,8 +1,8 @@
 const places=window.KHAOYAI_PLACES;
 const trip=[{title:'ออกจากขอนแก่น',sub:'จุดเริ่มต้นของเรา',icon:'🏡',coords:[16.4044293,102.7931929],x:195,y:145},{title:'เยี่ยมเพื่อน · ปึงหงี่เชียง',sub:'สาขาใหญ่ · สามแยกปักธงชัย',icon:'🤝',coords:[14.9587846,102.0547698],address:'3411 ถ.มิตรภาพ ต.ในเมือง อ.เมืองนครราชสีมา',maps:'https://www.google.com/maps?cid=2781679873927163381',mapNote:'จุดนัดพบที่ร้านปึงหงี่เชียง สาขาใหญ่ · หมุดร้านจากลิงก์ Google Maps ที่คุณยืนยัน',x:380,y:310,labelSide:'left'},{title:'กางเต็นท์ · เขาใหญ่',sub:'พัก 1 คืน · ยังไม่เลือกลาน',icon:'⛺',query:'อุทยานแห่งชาติเขาใหญ่',x:300,y:650},{title:'The White Rabbit Pool Villa',sub:'ที่พักคืนถัดไป',icon:'🐇',coords:[14.5986353,101.4698487],x:610,y:480}];
 const categories=[...new Set(places.map(p=>p.category))];
-const icons=['🌳','🐑','🌸','☕','🍜','🙏','🛍️','🏡','📌'];const tints=['#dcebc9','#fce4ba','#f6d7e5','#f6dfc4','#f8dac7','#e2d8f2','#d8e9ef','#dde3f5','#e6e5da'];
-const centers=[[235,525],[455,350],[585,310],[695,250],[620,410],[700,565],[320,220],[825,475],[820,570]];
+const icons=['🌳','🐑','🌸','☕','🍜','🙏','🛍️','🏡','🚙'];const tints=['#dcebc9','#fce4ba','#f6d7e5','#f6dfc4','#f8dac7','#e2d8f2','#d8e9ef','#dde3f5','#e6e5da'];
+const centers=[[235,525],[455,350],[585,310],[695,250],[620,410],[700,565],[320,220],[825,475],[80,230]];
 let selected=null,real=false,zoom=1;
 let osmMap=null,osmPins=null,osmStatus=null,tileFailed=false;
 const $=id=>document.getElementById(id);const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
