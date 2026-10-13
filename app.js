@@ -1,5 +1,10 @@
 const places=window.KHAOYAI_PLACES;
-const trip=[{title:'ออกจากขอนแก่น',sub:'จุดเริ่มต้นของเรา',icon:'🏡',coords:[16.4044293,102.7931929],x:195,y:145},{title:'เยี่ยมเพื่อน · ปึงหงี่เชียง',sub:'สาขาใหญ่ · สามแยกปักธงชัย',icon:'🤝',coords:[14.9587846,102.0547698],address:'3411 ถ.มิตรภาพ ต.ในเมือง อ.เมืองนครราชสีมา',maps:'https://www.google.com/maps?cid=2781679873927163381',mapNote:'จุดนัดพบที่ร้านปึงหงี่เชียง สาขาใหญ่ · หมุดร้านจากลิงก์ Google Maps ที่คุณยืนยัน',x:380,y:310,labelSide:'left'},{title:'กางเต็นท์ · เขาใหญ่',sub:'พัก 1 คืน · ยังไม่เลือกลาน',icon:'⛺',query:'อุทยานแห่งชาติเขาใหญ่',x:300,y:650},{title:'The White Rabbit Pool Villa',sub:'ที่พักคืนถัดไป',icon:'🐇',coords:[14.5986353,101.4698487],x:610,y:480}];
+const trip=[
+  {title:'ออกจากขอนแก่น',sub:'จุดเริ่มต้นของเรา',icon:'🏡',coords:[16.4044293,102.7931929],x:195,y:145},
+  {title:'เยี่ยมเพื่อน · ปึงหงี่เชียง',sub:'สาขาใหญ่ · สามแยกปักธงชัย',icon:'🤝',coords:[14.9587846,102.0547698],address:'3411 ถ.มิตรภาพ ต.ในเมือง อ.เมืองนครราชสีมา',maps:'https://www.google.com/maps?cid=2781679873927163381',mapNote:'จุดนัดพบที่ร้านปึงหงี่เชียง สาขาใหญ่ · หมุดร้านจากลิงก์ Google Maps ที่คุณยืนยัน',x:380,y:310,labelSide:'left'},
+  {title:'กางเต็นท์ · เขาใหญ่',sub:'พัก 1 คืน · ยังไม่เลือกลาน',icon:'⛺',coords:[14.3109229,101.5304415],maps:'https://www.google.com/maps?cid=93256245950163964',mapNote:'หมุดอุทยานแห่งชาติเขาใหญ่จากลิงก์ที่คุณยืนยัน · ยังไม่ใช่หมุดลานกางเต็นท์หรือประตูเข้า',x:300,y:650},
+  {title:'The White Rabbit Pool Villa Khao Yai',sub:'ที่พักคืนถัดไป',icon:'🐇',coords:[14.5986301,101.4724236],maps:'https://www.google.com/maps?cid=5266155117384773851',mapNote:'หมุดวิลล่าจากลิงก์ Google Maps ที่คุณยืนยัน · ใช้ทางเข้าตามป้าย',x:610,y:480}
+];
 const categories=[...new Set(places.map(p=>p.category))];
 const icons=['🌳','🐑','🌸','☕','🍜','🙏','🛍️','🏡','🚙','📷'];const tints=['#dcebc9','#fce4ba','#f6d7e5','#f6dfc4','#f8dac7','#e2d8f2','#d8e9ef','#dde3f5','#e6e5da','#f3dfcf'];
 const centers=[[235,525],[455,350],[585,310],[695,250],[620,410],[700,565],[320,220],[825,475],[80,230],[125,410]];
@@ -8,7 +13,7 @@ let osmMap=null,osmPins=null,osmStatus=null,tileFailed=false;
 let locationButton=null,userMarker=null,userAccuracy=null,locationMessage='',locating=false;
 const $=id=>document.getElementById(id);const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
 function button(text,fn,cls=''){const b=el('button',cls,text);b.type='button';b.addEventListener('click',fn);return b;}function link(text,url,cls='btn'){const a=el('a',cls,text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;}
-function shortZone(p){return p.zone.split('/')[0].trim();}function query(p){return p.coords?p.coords.join(','):p.mapQuery||p.query||p.title+' '+shortZone(p)+' ปากช่อง';}function mapurl(p){return p.maps||'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query(p));}function navurl(p){return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(query(p))+'&travelmode=driving&dir_action=navigate';}
+function shortZone(p){return p.zone.split('/')[0].trim();}function query(p){return coordinates(p)?coordinates(p).join(','):p.mapQuery||p.query||p.title+' '+shortZone(p)+' ปากช่อง';}function mapurl(p){return p.maps||'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query(p));}function navurl(p){return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(query(p))+'&travelmode=driving&dir_action=navigate';}
 
 for(const [i,c] of categories.entries()){const option=el('option','',icons[i]+' '+c+' · '+places.filter(p=>p.category===c).length+' จุด');option.value=c;$('category').append(option);}
 for(const z of [...new Set(places.map(shortZone))].sort((a,b)=>a.localeCompare(b,'th'))){const o=el('option','',z);o.value=z;$('zone').append(o);}
