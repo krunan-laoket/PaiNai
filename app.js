@@ -5,6 +5,7 @@ const icons=['🌳','🐑','🌸','☕','🍜','🙏','🛍️','🏡','🚙','�
 const centers=[[235,525],[455,350],[585,310],[695,250],[620,410],[700,565],[320,220],[825,475],[80,230],[125,410]];
 let selected=null,real=false,zoom=1;
 let osmMap=null,osmPins=null,osmStatus=null,tileFailed=false;
+let locationButton=null,userMarker=null,userAccuracy=null,locationMessage='',locating=false;
 const $=id=>document.getElementById(id);const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
 function button(text,fn,cls=''){const b=el('button',cls,text);b.type='button';b.addEventListener('click',fn);return b;}function link(text,url,cls='btn'){const a=el('a',cls,text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;}
 function shortZone(p){return p.zone.split('/')[0].trim();}function query(p){return p.coords?p.coords.join(','):p.mapQuery||p.query||p.title+' '+shortZone(p)+' ปากช่อง';}function mapurl(p){return p.maps||'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query(p));}function navurl(p){return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(query(p))+'&travelmode=driving&dir_action=navigate';}
@@ -22,7 +23,10 @@ function loadReal(){
   if(!window.L){$('realmap').replaceChildren(el('div','map-load-error','เปิดแผนที่ไม่สำเร็จ ลองรีเฟรชหน้า หรือใช้ปุ่มแผนที่ Google Maps'));return;}
   if(!osmMap){
     const canvas=el('div','osm-canvas');canvas.id='osmCanvas';
-    const tools=el('div','osm-tools');tools.append(button('🌿 รอบเขาใหญ่',()=>fitOsm(false)),button('🏡 รวมจุดเริ่มต้น',()=>fitOsm(true)));
+    const tools=el('div','osm-tools');
+    locationButton=button('📍 ตำแหน่งฉัน',locateMe,'locate-button');
+    locationButton.title='ขอตำแหน่งปัจจุบันและเลื่อนแผนที่มาที่ฉัน';
+    tools.append(button('🌿 รอบเขาใหญ่',()=>fitOsm(false)),button('🏡 รวมจุดเริ่มต้น',()=>fitOsm(true)),locationButton);
     osmStatus=el('div','osm-status');osmStatus.setAttribute('role','status');
     $('realmap').replaceChildren(canvas,tools,osmStatus);
     osmMap=L.map(canvas,{zoomControl:false,scrollWheelZoom:false}).setView([14.52,101.42],10);
@@ -34,7 +38,34 @@ function loadReal(){
   requestAnimationFrame(()=>{if(!real)return;osmMap.invalidateSize();const coords=selected&&coordinates(selected);if(coords)osmMap.setView(coords,14,{animate:false});else if(!selected)fitOsm(false);});
 }
 function coordinates(p){return p.mapCoords||p.coords;}
-function updateOsmStatus(){if(!osmStatus)return;const count=filtered().filter(p=>coordinates(p)).length;const pending=filtered().length-count;osmStatus.textContent=(tileFailed?'โหลดพื้นแผนที่ไม่ได้ · ตรวจอินเทอร์เน็ต · ':'')+'หมุดสถานที่ '+count+' จุด'+(pending?' · รอพิกัด '+pending+' จุด':' · พิกัดครบแล้ว')+(selected&&!coordinates(selected)?' · จุดที่เลือกยังไม่มีพิกัด':'');}
+function updateOsmStatus(){if(!osmStatus)return;const count=filtered().filter(p=>coordinates(p)).length;const pending=filtered().length-count;osmStatus.replaceChildren(el('span','',(tileFailed?'โหลดพื้นแผนที่ไม่ได้ · ตรวจอินเทอร์เน็ต · ':'')+'หมุดสถานที่ '+count+' จุด'+(pending?' · รอพิกัด '+pending+' จุด':' · พิกัดครบแล้ว')+(selected&&!coordinates(selected)?' · จุดที่เลือกยังไม่มีพิกัด':'')));if(locationMessage)osmStatus.append(el('span','location-status',locationMessage));}
+function locateMe(){
+  if(!osmMap||locating)return;
+  if(!window.isSecureContext){locationMessage='เปิดเว็บผ่าน HTTPS หรือ localhost เพื่อใช้ตำแหน่งปัจจุบัน';updateOsmStatus();return;}
+  if(!navigator.geolocation){locationMessage='เบราว์เซอร์นี้ไม่รองรับตำแหน่งปัจจุบัน';updateOsmStatus();return;}
+  locating=true;locationButton.disabled=true;locationButton.textContent='📍 กำลังหา…';locationButton.setAttribute('aria-busy','true');
+  locationMessage='กำลังหาตำแหน่ง · อนุญาตการเข้าถึงตำแหน่งเมื่อเบราว์เซอร์ถาม';updateOsmStatus();
+  const finish=()=>{locating=false;locationButton.disabled=false;locationButton.textContent='📍 ตำแหน่งฉัน';locationButton.setAttribute('aria-busy','false');updateOsmStatus();};
+  const failed=error=>{
+    locationMessage=error.code===1?'ยังไม่ได้รับสิทธิ์ตำแหน่ง · อนุญาตตำแหน่งในตั้งค่าเว็บไซต์ แล้วกดใหม่':error.code===3?'หาตำแหน่งนานเกินไป · ลองกดอีกครั้ง':'หาตำแหน่งไม่ได้ · ตรวจว่าบนอุปกรณ์เปิดบริการตำแหน่ง แล้วลองใหม่';
+    if(userMarker)locationMessage+=' · หมุดยังแสดงตำแหน่งครั้งก่อน';
+    finish();
+  };
+  try{navigator.geolocation.getCurrentPosition(position=>{
+    const {latitude,longitude,accuracy}=position.coords;
+    const coords=[latitude,longitude];
+    const label='ตำแหน่งฉัน · คลาดเคลื่อนประมาณ '+Math.ceil(accuracy).toLocaleString('th-TH')+' เมตร';
+    if(userMarker){userMarker.setLatLng(coords);userMarker.setTooltipContent(el('span','',label));userAccuracy.setLatLng(coords).setRadius(accuracy);}
+    else{
+      userAccuracy=L.circle(coords,{radius:accuracy,color:'#287bcc',weight:1,fillColor:'#4299ec',fillOpacity:.12,interactive:false}).addTo(osmMap);
+      const icon=L.divIcon({html:el('span','user-location-dot'),className:'user-location-pin',iconSize:[24,24],iconAnchor:[12,12],tooltipAnchor:[0,-12]});
+      userMarker=L.marker(coords,{icon,title:'ตำแหน่งฉัน',alt:'ตำแหน่งฉัน',zIndexOffset:2000}).bindTooltip(el('span','',label),{direction:'top',className:'osm-tooltip'}).addTo(osmMap);
+    }
+    locationMessage=label+' · กดตำแหน่งฉันเพื่ออัปเดต';
+    if(real){osmMap.invalidateSize();osmMap.setView(coords,Math.max(osmMap.getZoom(),15),{animate:false});userMarker.openTooltip();}
+    finish();
+  },failed,{enableHighAccuracy:true,timeout:15000,maximumAge:0});}catch{failed({code:2});}
+}
 function syncOsmPins(){
   if(!osmPins)return;osmPins.clearLayers();
   for(const p of [...filtered(),...trip]){
@@ -49,6 +80,47 @@ function syncOsmPins(){
   updateOsmStatus();if(!selected)fitOsm(false);
 }
 function fitOsm(includeStart){if(!osmMap)return;const all=[...filtered(),...trip.filter(p=>includeStart||p!==trip[0])];const coords=all.map(coordinates).filter(Boolean);if(coords.length)osmMap.fitBounds(L.latLngBounds(coords),{paddingTopLeft:[55,105],paddingBottomRight:[55,70],maxZoom:13,animate:false});else osmMap.setView([14.52,101.42],10,{animate:false});}
+
+let mapExpanded=false,fullscreenBusy=false;
+const backgroundInert=new Map();
+function setMapExpanded(value){
+  mapExpanded=value;
+  $('board').classList.toggle('map-expanded',value);
+  document.body.classList.toggle('map-fullscreen-open',value);
+  const label=value?'ย่อแผนที่กลับ':'เปิดแผนที่เต็มจอ';
+  $('fullscreen').textContent=value?'✕':'⛶';
+  $('fullscreen').title=label;
+  $('fullscreen').setAttribute('aria-label',label);
+  $('fullscreen').setAttribute('aria-pressed',String(value));
+  // Keep the visitor guide inside the fullscreen element so it stays visible.
+  (value?$('board'):document.body).append($('dialog'));
+  if(value){
+    for(const node of document.querySelectorAll('header, #trip, .sidebar')){if(!backgroundInert.has(node))backgroundInert.set(node,node.inert);node.inert=true;}
+  }else{for(const [node,inert] of backgroundInert)node.inert=inert;backgroundInert.clear();}
+  $('fullscreen').focus({preventScroll:true});
+  requestAnimationFrame(()=>{if(osmMap)osmMap.invalidateSize({pan:false});});
+}
+async function toggleMapFullscreen(){
+  if(fullscreenBusy)return;
+  fullscreenBusy=true;$('fullscreen').disabled=true;
+  try{
+    if(mapExpanded){
+      if(document.fullscreenElement===$('board'))await document.exitFullscreen();
+      setMapExpanded(false);
+    }else{
+      setMapExpanded(true);
+      if($('board').requestFullscreen){
+        try{await $('board').requestFullscreen();}catch{/* Keep the viewport-sized map when native fullscreen is unavailable. */}
+      }
+    }
+  }catch{/* Keep the exit button available if the browser refuses to leave fullscreen. */}
+  finally{fullscreenBusy=false;$('fullscreen').disabled=false;$('fullscreen').focus({preventScroll:true});}
+}
+document.addEventListener('fullscreenchange',()=>setMapExpanded(document.fullscreenElement===$('board')));
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&mapExpanded&&!$('dialog').open&&!document.fullscreenElement){event.preventDefault();setMapExpanded(false);}
+});
+$('fullscreen').addEventListener('click',toggleMapFullscreen);
 
 function setZoom(value){zoom=Math.max(1,Math.min(2.5,value));const w=1000/zoom,h=740/zoom;const cx=zoom>1?500:500,cy=zoom>1?440:370;$('art').setAttribute('viewBox',`${cx-w/2} ${cy-h/2} ${w} ${h}`);}
 function guideSection(title,content,cls=''){

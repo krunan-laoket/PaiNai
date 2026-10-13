@@ -40,6 +40,9 @@ select{width:100%;padding:8px;border:1px solid var(--line);border-radius:12px;ba
 .mapboard{position:relative;border:7px solid #fffdf6;border-radius:27px;background:#e8eedb;overflow:hidden;box-shadow:0 6px 0 #dfdfcf}
 .maptoolbar{position:absolute;top:16px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px;z-index:3;pointer-events:none}
 .maptoolbar>*{pointer-events:auto}
+.mapactions{display:flex;align-items:center;gap:6px}
+.fullscreen-button{flex-shrink:0;width:44px;height:44px;padding:0;font-size:24px;background:#fffdf3ed}
+.fullscreen-button[aria-pressed=true]{background:#51775a;color:white}
 .tape{background:#fff8dfed;padding:9px 14px;box-shadow:0 2px 6px #5c76521c;transform:rotate(-2deg);font-size:12px;max-width:340px;border-radius:3px}
 .tape small{display:block;font-size:10px;color:#7b806b}
 
@@ -223,8 +226,13 @@ h1{font-size:21px}
 .osm-number{position:absolute;bottom:-3px;right:-6px;background:#fffdf5;border:1px solid #e4decf;border-radius:9px;min-width:18px;height:18px;text-align:center;font:700 10px/16px "Mali",sans-serif;color:#496949;z-index:1}
 .osm-sticker.is-selected{outline:3px solid #d89573;box-shadow:0 4px 16px #ad735858}
 .osm-tooltip{border:1px solid #e2decd;border-radius:10px;background:#fffaf0;color:#415b44;box-shadow:0 3px 12px #4b604222;font:12px/1.6 "Mali",Tahoma,sans-serif}
-.osm-tools{position:absolute;top:90px;left:16px;z-index:2;display:flex;gap:6px}
+.osm-tools{position:absolute;top:90px;left:16px;right:65px;z-index:2;display:flex;flex-wrap:wrap;gap:6px}
 .osm-tools button{font-size:11px;background:#fffdf3ed;border-radius:12px;box-shadow:0 2px 8px #34473114}
+.osm-tools .locate-button{color:#2363a0;border-color:#b5cee6}
+.osm-tools .locate-button:disabled{opacity:.7;cursor:wait}
+.user-location-pin{background:none;border:0}
+.user-location-dot{display:block;width:24px;height:24px;background:#287bcc;border:4px solid white;border-radius:50%;box-shadow:0 0 0 2px #287bcc55,0 2px 7px #20456d55;box-sizing:border-box}
+.location-status{display:block;margin-top:4px;color:#2363a0}
 .osm-status{position:absolute;bottom:25px;left:12px;max-width:calc(100% - 130px);z-index:2;background:#fffaf0ed;padding:7px 10px;border:1px solid #e3decb;border-radius:12px;font-size:10px;color:#65735b;pointer-events:none}
 .mapboard.real .mapfoot{display:none}
 .mapboard.real .leaflet-top{top:82px}
@@ -271,4 +279,13 @@ h1{font-size:21px}
   .mapboard.real .leaflet-top{top:56px}
   .osm-status{bottom:27px;left:8px;font-size:9px;padding:5px 8px;max-width:calc(100% - 16px)}
   .osm-canvas .leaflet-control-zoom a{width:44px;height:44px;line-height:44px}
+}
+
+/* Native fullscreen and viewport fallback share the same map layout. */
+body.map-fullscreen-open{overflow:hidden}
+.mapboard.map-expanded{position:fixed;inset:0;z-index:1000;width:100%;height:100vh;height:100dvh;min-height:0;max-width:none;border:0;border-radius:0;box-shadow:none;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.mapboard.map-expanded .selected{max-height:calc(100% - 180px);overflow:auto}
+@media(max-width:620px){
+  .mapactions .views{flex:1;min-width:0}
+  .mapboard.map-expanded .realmap{top:calc(135px + env(safe-area-inset-top));bottom:env(safe-area-inset-bottom)}
 }
