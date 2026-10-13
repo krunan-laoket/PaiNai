@@ -14,7 +14,10 @@ for (const line of readme.split(/\r?\n/)) {
   const content = fs.readFileSync(path.join(root, file), 'utf8');
   const field = (prefix) => content.split(/\r?\n/).find(l => l.startsWith('- **' + prefix))?.replace(/^- \*\*[^*]+\*\*\s*/, '') || '';
   const maps = content.match(/\]\((https:\/\/(?:www\.google\.com\/maps|maps\.app\.goo\.gl)[^)]+)\)/)?.[1];
-  places.push({ id: Number(id), title, category, file, zone: field('โซน'), address: field('ที่ตั้ง'), description: field('ลักษณะ'), time: field('เวลาเผื่อ'), maps, content });
+  const coordinateText = field('พิกัดแสดงบนแผนที่');
+  const mapCoords = coordinateText ? coordinateText.split(',').map(value => Number(value.trim())) : undefined;
+  if (mapCoords && (mapCoords.length !== 2 || !mapCoords.every(Number.isFinite) || Math.abs(mapCoords[0]) > 90 || Math.abs(mapCoords[1]) > 180)) throw Error('Invalid map coordinates: ' + file);
+  places.push({ id: Number(id), title, category, file, zone: field('โซน'), address: field('ที่ตั้ง'), description: field('ลักษณะ'), time: field('เวลาเผื่อ'), mapCoords, mapQuery: field('คำค้นแผนที่') || undefined, maps, content });
 }
 if (places.length !== 32 || new Set(places.map(p => p.id)).size !== 32) throw Error('Expected 32 unique places');
 const template = fs.readFileSync(path.join(root, 'page-template.html'), 'utf8');

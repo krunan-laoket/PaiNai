@@ -1,6 +1,6 @@
 :root{--ink:#384d43;--sage:#51775a;--cream:#fffaf0;--line:#e4decf;--peach:#efaa8e}
 *{box-sizing:border-box}
-body{margin:0;color:var(--ink);font:15px/1.6 Tahoma,"Leelawadee UI",sans-serif;background:#f5f2e7;background-image:radial-gradient(#dfdac8 .6px,transparent .6px);background-size:10px 10px}
+body{margin:0;color:var(--ink);font:15px/1.6 "Mali",Tahoma,"Leelawadee UI",sans-serif;background:#f5f2e7;background-image:radial-gradient(#dfdac8 .6px,transparent .6px);background-size:10px 10px}
 button,input,select{font:inherit;color:inherit}
 button,a{touch-action:manipulation}
 button{cursor:pointer}
@@ -42,13 +42,13 @@ select{width:100%;padding:8px;border:1px solid var(--line);border-radius:12px;ba
 .maptoolbar>*{pointer-events:auto}
 .tape{background:#fff8dfed;padding:9px 14px;box-shadow:0 2px 6px #5c76521c;transform:rotate(-2deg);font-size:12px;max-width:340px;border-radius:3px}
 .tape small{display:block;font-size:10px;color:#7b806b}
-.views{display:flex;gap:6px}
-.views button{background:#fffcf1eF;font-size:12px}
-.views button[aria-pressed=true]{background:#51775a;color:white}
+
+
+
 .mapart{width:100%;height:100%;display:block;touch-action:pan-y}
 .controls{position:absolute;right:15px;top:83px;display:flex;flex-direction:column;gap:7px;z-index:3}
 .controls button{width:40px;height:40px;padding:0;background:#fffdf5;font-size:20px;box-shadow:0 2px 4px #4e664922}
-.maplabel{font-size:16px;fill:#74866b;font-family:Tahoma,sans-serif}
+.maplabel{font-size:16px;fill:#74866b;font-family:"Mali",Tahoma,sans-serif}
 .biglabel{font-size:21px;fill:#7d9672;letter-spacing:1px}
 .pin{cursor:pointer;outline:none}
 .pin .bubble{stroke:#fff;stroke-width:4;filter:drop-shadow(0 3px 2px #5c765244)}
@@ -70,11 +70,11 @@ select{width:100%;padding:8px;border:1px solid var(--line);border-radius:12px;ba
 .btn{display:inline-block;border:1px solid var(--line);border-radius:12px;padding:8px 11px;background:#fdfaf0;color:#52734f;font-size:12px;text-decoration:none}
 .btn.primary{background:#597e58;color:white;border-color:#597e58}
 .mapfoot{position:absolute;bottom:8px;right:12px;font-size:9px;color:#6a7b61;background:#f7f9ecbd;border-radius:8px;padding:3px 8px}
-.realmap{position:absolute;inset:0;background:#eaf0dd;z-index:1}
-.realmap iframe{width:100%;height:100%;border:0}
-.realmap .hint{position:absolute;top:74px;left:20px;background:#fffdf5;padding:8px 12px;border-radius:12px;font-size:11px;max-width:300px}
-.mapboard.real .selected{left:auto;right:23px}
-.mapboard.real .controls{display:none}
+
+
+
+
+
 .help{max-width:1600px;margin:0 auto;padding:0 28px 20px;color:#7f8675;font-size:11px}
 .help a{margin-left:8px}
 dialog{padding:0;width:min(740px,calc(100% - 24px));max-height:85vh;border:1px solid var(--line);border-radius:23px;background:var(--cream);color:var(--ink)}
@@ -105,24 +105,9 @@ h1{font-size:21px}
 .tape{max-width:210px}
 .maptoolbar{flex-wrap:wrap}
 .selected{left:12px;bottom:30px;width:calc(100% - 24px);padding:15px}
-.mapboard.real .selected{right:12px}
+
 }
-@media(max-width:620px){.workspace{display:flex;flex-direction:column;height:auto;min-height:0}
-.mapboard{height:70vh;min-height:560px;order:-1}
-.sidebar{height:370px}
-.sidebarhead{padding:12px 14px}
-.sidebarhead h2{margin-bottom:8px}
-.search{margin-bottom:6px}
-.list{flex:1;min-height:0}
-.maptoolbar{top:10px;left:10px;right:10px}
-.tape{max-width:230px}
-.controls{top:114px;right:10px}
-.mapart{min-width:100%}
-.help{padding:0 16px 18px}
-.brand{gap:9px}
-.logo{padding:5px 8px;font-size:25px}
-.mapfoot{font-size:8px}
-}
+
 
 /* รายชื่อเลื่อนได้โดยไม่มีแถบเลื่อนซ้อน */
 
@@ -133,11 +118,104 @@ h1{font-size:21px}
 
 .sidebarhead,.result{flex-shrink:0}
 
-@media(max-width:620px){.sidebar{height:430px}
-}
+
 
 .filterlabel{display:block;margin:8px 0 5px;font-size:11px;color:#78816d}
 
 .result{padding-top:12px}
 
+/* มือถือ: แผนที่ก่อน ตัวกรองสองคอลัมน์ และรายละเอียดจากขอบล่าง */
+.filterfield{min-width:0}
+@media(max-width:620px){
+  body{font-size:14px}
+  header{padding:16px 16px 10px;padding-top:max(16px,env(safe-area-inset-top));gap:8px}
+  .brand{gap:10px;min-width:0}
+  .brand>div:last-child{min-width:0}
+  .logo{font-size:25px;padding:5px 9px;border-radius:18px;flex-shrink:0}
+  .kicker{font-size:8px;letter-spacing:1.2px}
+  h1{font-size:clamp(17px,4.8vw,22px);line-height:1.45;overflow-wrap:anywhere}
+  header p{font-size:11px;margin-top:3px}
+  .trip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:4px 14px 14px;overflow:visible}
+  .arrow{display:none}
+  .stop{min-width:0;min-height:72px;padding:9px 10px;gap:8px;border-radius:16px;white-space:normal;box-shadow:0 2px 0 #e4dfcd;text-align:left}
+  .stop>span:last-child{min-width:0;flex:1}
+  .stop .icon{font-size:23px;flex-shrink:0}
+  .stop strong{font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+  .stop small{font-size:9px;display:block;line-height:1.4;margin-top:3px}
+  .workspace{display:flex;flex-direction:column;height:auto;min-height:0;gap:16px;padding:0 12px 16px}
+  .mapboard{order:-1;display:flex;flex-direction:column;height:430px;height:clamp(350px,57svh,500px);min-height:0;border-width:4px;border-radius:23px;box-shadow:0 4px 0 #dfdfcf;min-width:0}
+  .maptoolbar{position:relative;inset:auto;flex-direction:column;flex-wrap:nowrap;align-items:stretch;padding:10px 10px 0;gap:9px;flex-shrink:0}
+  .tape{transform:none;max-width:none;font-size:11px;padding:8px 10px;border-radius:10px;box-shadow:none;background:#fff9e4e8}
+  .tape small{font-size:9px;line-height:1.5;margin-top:2px}
+  
+  
+  .mapart{flex:1;min-height:0;width:100%;height:auto;padding-bottom:20px}
+  .controls{top:auto;bottom:32px;right:10px;gap:6px}
+  .controls button{width:44px;height:44px;border-radius:14px;font-size:22px}
+  .mapfoot{bottom:7px;left:10px;right:auto;font-size:8px;max-width:calc(100% - 20px)}
+  
+  
+  .sidebar{height:auto;min-width:0;border-radius:22px;box-shadow:0 3px 0 #e9e4d6}
+  .sidebarhead{padding:16px 14px 14px}
+  .sidebarhead h2{font-size:17px;margin:0 0 12px}
+  .search{font-size:16px;min-height:48px;padding:11px 12px;margin:0}
+  .filtergrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+  .filterlabel{font-size:11px;margin:0 0 5px}
+  select{font-size:16px;min-height:46px;padding:8px;width:100%;text-overflow:ellipsis}
+  .result{padding:10px 14px 8px;align-items:center;min-height:44px;font-size:11px}
+  .result button{min-height:44px;padding:7px 0 7px 12px;font-size:12px}
+  .list{flex:none;max-height:360px;max-height:48svh;padding:0 8px 12px}
+  .place{min-height:64px;padding:10px;gap:12px;margin:0;border-bottom:1px solid #eeebdf;border-radius:12px}
+  .place .sticker{width:42px;height:42px;border-radius:14px;font-size:24px}
+  .place>span:last-child{min-width:0;flex:1}
+  .place strong{font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+  .place small{font-size:11px;margin-top:2px}
+  .selected,
+  .selected::-webkit-scrollbar{display:none}
+  .selected:before{top:8px;left:calc(50% - 20px);width:40px;height:4px;border-radius:6px;background:#d5d6c6;transform:none}
+  .selected h2{font-size:20px;margin:10px 28px 10px 0;overflow-wrap:anywhere}
+  .selected p{font-size:13px;line-height:1.75}
+  .badge{font-size:11px;padding-right:32px}
+  .closepanel{top:12px;right:10px;min-width:44px;min-height:44px;border-radius:50%;padding:8px}
+  .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}
+  .actions .btn{display:flex;align-items:center;justify-content:center;text-align:center;min-height:46px;font-size:13px;padding:10px 8px;border-radius:14px}
+  .actions .primary{grid-column:1/-1;font-size:15px;min-height:50px}
+  dialog{width:calc(100% - 16px);max-height:88vh;max-height:88svh;border-radius:22px}
+  .dialoghead{padding:12px 16px;font-size:13px}
+  .dialoghead button{min-height:44px;min-width:60px}
+  .detail{padding:12px 18px 24px}
+  .detail h2{font-size:21px}
+  .detail p,.detail li{font-size:14px;line-height:1.8}
+  .help{padding:0 16px max(22px,env(safe-area-inset-bottom));font-size:10px;line-height:1.8}
+}
+@media(max-width:360px){
+  .stop{padding:8px;gap:6px}
+  .stop .icon{font-size:20px}
+  .stop strong{font-size:10px}
+  .filtergrid{grid-template-columns:1fr}
+}
+@media(max-width:620px) and (orientation:landscape){
+  .mapboard{height:400px}
+  .selected,
+}
 
+
+
+
+/* สลับภาพร่างกับ Google Maps ที่ฝัง */
+.views{display:flex;gap:6px}
+.views button{background:#fffcf1ef;font-size:12px}
+.views button[aria-pressed=true]{background:#51775a;color:white}
+.realmap{position:absolute;inset:0;background:#eaf0dd;z-index:1}
+.realmap iframe{width:100%;height:100%;border:0}
+.realmap .hint{position:absolute;top:74px;left:20px;background:#fffdf5;padding:8px 12px;border-radius:12px;font-size:11px;max-width:300px}
+.mapboard.real .selected{left:auto;right:23px}
+.mapboard.real .controls{display:none}
+@media(max-width:850px){.mapboard.real .selected{right:12px}}
+@media(max-width:620px){
+.views{display:grid;grid-template-columns:1fr 1fr;gap:5px;background:#fffdf3db;border-radius:15px;padding:4px}
+.views button{border:0;border-radius:11px;min-height:42px;font-size:12px;padding:7px 8px;background:transparent}
+.realmap{top:135px}
+.realmap .hint{top:8px;left:8px;right:8px;max-width:none;font-size:9px;line-height:1.5;padding:6px 9px;background:#fffdf4e8}
+.mapboard.real .selected{left:8px;right:8px}
+}
