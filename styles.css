@@ -75,8 +75,6 @@ select{width:100%;padding:8px;border:1px solid var(--line);border-radius:12px;ba
 
 
 
-.help{max-width:1600px;margin:0 auto;padding:0 28px 20px;color:#7f8675;font-size:11px}
-.help a{margin-left:8px}
 dialog{padding:0;width:min(740px,calc(100% - 24px));max-height:85vh;border:1px solid var(--line);border-radius:23px;background:var(--cream);color:var(--ink)}
 dialog::backdrop{background:#2e483eb3}
 .dialoghead{position:sticky;top:0;background:var(--cream);padding:12px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed var(--line)}
@@ -186,7 +184,6 @@ h1{font-size:21px}
   .detail{padding:12px 18px 24px}
   .detail h2{font-size:21px}
   .detail p,.detail li{font-size:14px;line-height:1.8}
-  .help{padding:0 16px max(22px,env(safe-area-inset-bottom));font-size:10px;line-height:1.8}
 }
 @media(max-width:360px){
   .stop{padding:8px;gap:6px}
