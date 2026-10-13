@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ร้านอาหาร
+- **พิกัดแสดงบนแผนที่:** 14.6170708, 101.4069015
+- **แหล่งพิกัด:** [Google Maps: Midwinter Khaoyai](https://www.google.com/maps?cid=16280170216089450737) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** 88 Midwinter Khaoyai, 88 หมู่ที่ 10 Thanaratch Rd Khlong Chai, Nong Nam Daeng, Pak Chong District, Nakhon Ratchasima 30130
 - **โซน:** ธนะรัชต์ / หนองน้ำแดง
 - **ที่ตั้งที่ใช้วางแผน:** 88/88 หมู่ 10 ถนนธนะรัชต์ ต.หนองน้ำแดง อ.ปากช่อง
 - **ลักษณะสถานที่:** ร้านอาหารและพื้นที่นั่งชมบรรยากาศ
@@ -54,6 +57,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Midwinter Khaoyai](https://www.google.com/maps?cid=16280170216089450737)
 - [Tripadvisor: ที่อยู่ร้าน](https://www.tripadvisor.com.sg/Restaurant_Review-g641719-d7177004-Reviews-Midwinter_Khao_Yai-Pak_Chong_Pak_Chong_District_Nakhon_Ratchasima_Province.html)
 
 - [Midwinter: เว็บไซต์ทางการ](https://www.midwinterofficial.com/)

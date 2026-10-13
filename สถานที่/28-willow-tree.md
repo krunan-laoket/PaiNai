@@ -37,6 +37,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ที่พัก
+- **พิกัดแสดงบนแผนที่:** 14.5350329, 101.3934729
+- **แหล่งพิกัด:** [Google Maps: Willow Tree House Khao-Yai](https://www.google.com/maps?cid=1330693050727115528) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** 214 Willow Tree House Khao-Yai Mu Si, Pak Chong District, Nakhon Ratchasima 30450
 - **โซน:** หมูสี / นอกอุทยาน
 - **ที่ตั้ง:** 214 ต.หมูสี อ.ปากช่อง ตามหมุดผู้ใช้
 - **ลักษณะ:** ที่พักพร้อมสวน ไม่ใช่สถานที่เที่ยวที่เข้าไปถ่ายรูปได้โดยอัตโนมัติ
@@ -58,6 +61,8 @@
 
 ## อ้างอิง
 
+
+- [Google Maps: หมุด Willow Tree House Khao-Yai](https://www.google.com/maps?cid=1330693050727115528)
 - [Booking.com: Willow Tree House](https://www.booking.com/hotel/th/willow-tree-house-khaoyai.html)
 - รายการจากผู้ใช้พร้อมเวลาช่วงในวิดีโอ เป็นข้อมูลตั้งต้น ไม่ใช่หลักฐานวันที่เปิดปัจจุบัน
 

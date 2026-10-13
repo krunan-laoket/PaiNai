@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ร้านอาหาร
+- **พิกัดแสดงบนแผนที่:** 14.5372355, 101.3783948
+- **แหล่งพิกัด:** [Google Maps: Prime 19 Khao Yai](https://www.google.com/maps?cid=2342328422379985418) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** Prime 19 Khao Yai, 777 หมู่ 5 ศูนย์การค้ากรีนเนอรี่ปาร์คมอลล์ หมูสี Pak Chong District, Nakhon Ratchasima 30130
 - **โซน:** หมูสี / ธนะรัชต์ กม.19
 - **ที่ตั้งที่ใช้วางแผน:** หน้าพื้นที่ Scenical World ถนนธนะรัชต์ กม.19 ต.หมูสี อ.ปากช่อง
 - **ลักษณะสถานที่:** ร้านอาหารแนวสเต็กและ Butchery
@@ -54,6 +57,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Prime 19 Khao Yai](https://www.google.com/maps?cid=2342328422379985418)
 - [Wongnai: ร้าน Prime 19](https://www.wongnai.com/restaurants/299815Mc-prime-19-khaoyai-khaoyai)
 
 - [Prime 19: เมนูผู้ประกอบการ](https://prime19.sino.co.th/prime19/Prime19_menu.pdf)

@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ศาสนสถาน
+- **พิกัดแสดงบนแผนที่:** 14.5320101, 101.5783554
+- **แหล่งพิกัด:** [Google Maps: Wat Pa Phu Hai Long](https://www.google.com/maps?cid=868030635159070917) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** GHJH+R85 Wat Pa Phu Hai Long, Sap Samran, Wang Katha, Pak Chong District, Nakhon Ratchasima 30130
 - **โซน:** วังกะทะ / ฝั่งตะวันออก
 - **ที่ตั้งที่ใช้วางแผน:** บ้านซับสำราญ ต.วังกะทะ อ.ปากช่อง จ.นครราชสีมา
 - **ลักษณะสถานที่:** วัดบนเขาและพื้นที่ชมวิว
@@ -54,6 +57,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Wat Pa Phu Hai Long](https://www.google.com/maps?cid=868030635159070917)
 - [มหาวิทยาลัยเทคโนโลยีสุรนารี: ข้อมูลวัด](https://nm.sut.ac.th/koratdata/?data_id=2683&m=detail)
 
 - [GO ISAN: วัดป่าภูหายหลง](https://gotoisan.com/explore/25)

@@ -33,8 +33,11 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ของฝากและช้อปปิ้ง
+- **พิกัดแสดงบนแผนที่:** 14.659101, 101.3927522
+- **แหล่งพิกัด:** [Google Maps: Premium Outlet Khaoyai at Pak Chong](https://www.google.com/maps?cid=16986043808769076940) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** Premium Outlet Khaoyai at Pak Chong, 299 Mittraphap Rd Talat Noina, Tambon Pak Chong, Pak Chong District, Nakhon Ratchasima 30130
 - **โซน:** มิตรภาพ / หนองน้ำแดง
-- **ที่ตั้งที่ใช้วางแผน:** ถนนมิตรภาพ ต.หนองน้ำแดง อ.ปากช่อง; เอกสารร้านค้าเก่าระบุ 888 หมู่ 7
+- **ที่ตั้งที่ใช้วางแผน:** 299 ถนนมิตรภาพ ต.ปากช่อง อ.ปากช่อง จ.นครราชสีมา ตามหมุด Google Maps ที่ตรวจเพิ่ม
 - **ลักษณะสถานที่:** ศูนย์ช้อปปิ้งเอาท์เล็ท ไม่ใช่ร้านสเต็กหรือฟาร์ม
 - **เวลาเผื่อเที่ยว:** 1–2 ชั่วโมง — เป็นข้อเสนอสำหรับจัดแผน ไม่ใช่ระยะเวลาจากผู้ประกอบการ
 
@@ -54,6 +57,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Premium Outlet Khaoyai at Pak Chong](https://www.google.com/maps?cid=16986043808769076940)
 - [KTC: เอกสารที่อยู่ร้านในโครงการ (เก่า)](https://www.ktc.co.th/sites/cs/assets/privileges/document/ALL-BRANCH-SPORTS-REV-Jan.pdf)
 
 - [Premium Outlet: สาขาเขาใหญ่](https://www.outletmallthailand.com/our_branch/3)

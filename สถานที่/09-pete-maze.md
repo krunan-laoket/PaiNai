@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ฟาร์มและกิจกรรม
+- **พิกัดแสดงบนแผนที่:** 14.5791125, 101.4315909
+- **แหล่งพิกัด:** [Google Maps: Pete Maze](https://www.google.com/maps?cid=8142088178642071714) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** Pete Maze, 126 หมู่ที่ 11 ถนน ธนะรัชต์, Khanong Phra, Pak Chong District, Nakhon Ratchasima 30130
 - **โซน:** ขนงพระ / Bonanza
 - **ที่ตั้งที่ใช้วางแผน:** โซนขนงพระ อ.ปากช่อง จ.นครราชสีมา
 - **ลักษณะสถานที่:** เขาวงกตแนวต้นไม้สำหรับเดินหาทางออก
@@ -54,6 +57,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Pete Maze](https://www.google.com/maps?cid=8142088178642071714)
 - [อบต.ขนงพระ: เอกสารท่องเที่ยวปี 2567](https://www.khanongpra.go.th/fileupload/2024-03-121127251335.pdf)
 
 - [ThaiTicketMajor: Pete Maze](https://www.thaiticketmajor.com/venue/pete-maze.html)

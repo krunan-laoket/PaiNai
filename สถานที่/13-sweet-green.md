@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ฟาร์มและกิจกรรม
+- **พิกัดแสดงบนแผนที่:** 14.5848751, 101.2487564
+- **แหล่งพิกัด:** [Google Maps: Sweet & Green Farm (ฟาร์มผัก ผลไม้ปลอดสาร ของฝากเขาใหญ่)](https://www.google.com/maps?cid=16064369123852992122) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** Sweet & Green Farm (ฟาร์มผัก ผลไม้ปลอดสาร ของฝากเขาใหญ่), 108 หมู่ที่ 9 Wang Phoem, Phaya Yen, Pak Chong District, Nakhon Ratchasima 30320
 - **โซน:** พญาเย็น / กุดคล้า–ผ่านศึก
 - **ที่ตั้งที่ใช้วางแผน:** 108 หมู่ 9 ต.พญาเย็น อ.ปากช่อง จ.นครราชสีมา
 - **ลักษณะสถานที่:** ฟาร์มผักผลไม้ ฟาร์มช็อป และกิจกรรมเก็บผลผลิตตามบริการที่ประกาศ
@@ -54,6 +57,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Sweet & Green Farm (ฟาร์มผัก ผลไม้ปลอดสาร ของฝากเขาใหญ่)](https://www.google.com/maps?cid=16064369123852992122)
 - [Sweet & Green: ที่อยู่และกิจกรรมเก็บมะเขือเทศ](https://www.sweetandgreenfarm.com/content/7877/pickyourowntomatokhaoyai)
 
 - [Sweet & Green: Farmshop](https://www.sweetandgreenfarm.com/farmshop)

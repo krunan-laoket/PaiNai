@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ศิลปะและสวนดอกไม้
+- **พิกัดแสดงบนแผนที่:** 14.5163519, 101.5187453
+- **แหล่งพิกัด:** [Google Maps: Floryday Khao Yai: Cafe & Flower](https://www.google.com/maps?cid=5136446647500704168) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** 82, Floryday Khao Yai: Cafe & Flower, Nong Chok, Pong Ta Long, Pak Chong District, Nakhon Ratchasima 30450
 - **โซน:** โป่งตาลอง / ฝั่งตะวันออก
 - **ที่ตั้งที่ใช้วางแผน:** 82 ต.โป่งตาลอง อ.ปากช่อง จ.นครราชสีมา
 - **ลักษณะสถานที่:** คาเฟ่และสวนดอกไม้บนพื้นที่เนิน
@@ -50,10 +53,12 @@ Wongnai และ Wanderlog สอดคล้องเรื่องโป่�
 
 [ค้นหาชื่อใน Google Maps](https://www.google.com/maps/search/?api=1&query=Floryday%20Khaoyai%3A%20Cafe%20%26%20Flower%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2) — ลิงก์ค้นหา ไม่ใช่หมุดที่ตรวจแล้ว ให้เลือกผลลัพธ์ตรงชื่อและที่ตั้ง โดยเฉพาะทางเข้า/ที่จอดรถ
 
-พิกัดตัวเลขจากต้นฉบับยังไม่มีหลักฐานยืนยันครบ จึงเก็บแยกใน [บันทึกตรวจสอบ](../บันทึกตรวจสอบ.md) และไม่ใช้สร้างลิงก์นำทางโดยตรง ค่าเข้า วันหยุด และการเปิดบริการควรตรวจจากแหล่งอ้างอิงก่อนกำหนดวันจริง
+พิกัดต้นฉบับแยกจากหมุด Google Maps ที่ตรวจเพิ่ม จึงเก็บแยกใน [บันทึกตรวจสอบ](../บันทึกตรวจสอบ.md) และไม่ใช้สร้างลิงก์นำทางโดยตรง ค่าเข้า วันหยุด และการเปิดบริการควรตรวจจากแหล่งอ้างอิงก่อนกำหนดวันจริง
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Floryday Khao Yai: Cafe & Flower](https://www.google.com/maps?cid=5136446647500704168)
 - [Wongnai: ที่ตั้ง Floryday](https://www.wongnai.com/restaurants/1980169my-floryday-khaoyai-cafe-flower)
 
 - [Wanderlog: Floryday](https://wanderlog.com/place/details/4991049/floryday-khaoyai--cafe--flower)

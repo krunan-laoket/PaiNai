@@ -39,10 +39,10 @@ for (const line of readme.split(/\r?\n/)) {
   const coordinateText = field('พิกัดแสดงบนแผนที่');
   const mapCoords = coordinateText ? coordinateText.split(',').map(value => Number(value.trim())) : undefined;
   if (mapCoords && (mapCoords.length !== 2 || !mapCoords.every(Number.isFinite) || Math.abs(mapCoords[0]) > 90 || Math.abs(mapCoords[1]) > 180)) throw Error('Invalid map coordinates: ' + file);
-  places.push({ id: Number(id), title, category, file, zone: field('โซน'), address: field('ที่ตั้ง'), description: guide.about, time: field('เวลาเผื่อ'), guide, references, mapCoords, mapQuery: field('คำค้นแผนที่') || undefined, maps });
+  places.push({ id: Number(id), title, category, file, zone: field('โซน'), address: field('ที่ตั้ง'), description: guide.about, time: field('เวลาเผื่อ'), guide, references, mapCoords, mapNote: field('ขอบเขตหมุด') || undefined, mapQuery: field('คำค้นแผนที่') || undefined, maps });
 }
-if (places.length !== 32 || new Set(places.map(p => p.id)).size !== 32) throw Error('Expected 32 unique places');
+if (!places.length || new Set(places.map(p => p.id)).size !== places.length) throw Error('Place list must contain unique entries');
 const template = fs.readFileSync(path.join(root, 'page-template.html'), 'utf8');
-fs.writeFileSync(path.join(root, 'index.html'), template);
+fs.writeFileSync(path.join(root, 'index.html'), template.replaceAll('__PLACE_COUNT__', String(places.length)));
 fs.writeFileSync(path.join(root, 'places-data.js'), 'window.KHAOYAI_PLACES = ' + JSON.stringify(places, null, 2).replaceAll('<', '\\u003c') + ';\n');
 console.log(`Created index.html with ${places.length} places in ${new Set(places.map(p => p.category)).size} categories`);

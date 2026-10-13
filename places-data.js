@@ -27,11 +27,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Ban Tha Chang Spring",
+        "url": "https://www.google.com/maps?cid=982034922213293252"
+      },
+      {
         "label": "ไทยรัฐ: ข่าวปิดปรับปรุง",
         "url": "https://www.thairath.co.th/news/local/2934802"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9C%E0%B8%B8%E0%B8%94%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5479302,
+      101.4199419
+    ],
+    "mapQuery": "Ban Tha Chang Spring, ซอย โยธาธิการ Mu Si, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=982034922213293252"
   },
   {
     "id": 2,
@@ -150,11 +159,21 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Nong Phak Chi Wildlife Watching Tower",
+        "url": "https://www.google.com/maps?cid=12787269608470053898"
+      },
+      {
         "label": "อุทยาน: สถานที่ท่องเที่ยว",
         "url": "https://khaoyainationalpark.com/plan-your-visit/place-to-go"
       }
     ],
-    "maps": "https://maps.app.goo.gl/qDGoxgwx6ekks1FQ7"
+    "mapCoords": [
+      14.4539363,
+      101.3597092
+    ],
+    "mapNote": "ตำแหน่งหอดูสัตว์ ต้องจอดรถแล้วเดินเข้าไป ไม่ใช่ลานจอดรถ",
+    "mapQuery": "F935+HVG Nong Phak Chi Wildlife Watching Tower, Mu Si, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=12787269608470053898"
   },
   {
     "id": 5,
@@ -184,11 +203,21 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Sai Sorn Reservoir",
+        "url": "https://www.google.com/maps?cid=219197043178500407"
+      },
+      {
         "label": "อุทยาน: สถานที่ท่องเที่ยว",
         "url": "https://khaoyainationalpark.com/plan-your-visit/place-to-go"
       }
     ],
-    "maps": "https://maps.app.goo.gl/EFf5vVBUVqBwFzMe7"
+    "mapCoords": [
+      14.4324187,
+      101.3704117
+    ],
+    "mapNote": "ตำแหน่งอ่างเก็บน้ำ ใช้จุดจอดที่อุทยานกำหนด",
+    "mapQuery": "C9JC+X57 Sai Sorn Reservoir, Khao Yai National Park, Hin Tung, Mueang Nakhon Nayok District, Nakhon Nayok 26000",
+    "maps": "https://www.google.com/maps?cid=219197043178500407"
   },
   {
     "id": 6,
@@ -218,11 +247,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด กังหันลม เขายายเที่ยง",
+        "url": "https://www.google.com/maps?cid=3154995260436342507"
+      },
+      {
         "label": "กฟผ.: กังหันลมเขายายเที่ยง",
         "url": "https://www.egat.co.th/home/20230425-art01/"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%A1%20%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%87%20%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%9C%E0%B9%88%20%E0%B8%AA%E0%B8%B5%E0%B8%84%E0%B8%B4%E0%B9%89%E0%B8%A7%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.8011212,
+      101.5581613
+    ],
+    "mapQuery": "กังหันลม เขายายเที่ยง Khao Yai Thiang, Khlong Phai, Sikhio District, Nakhon Ratchasima 30340",
+    "maps": "https://www.google.com/maps?cid=3154995260436342507"
   },
   {
     "id": 31,
@@ -252,11 +290,21 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Pong Thung Kwang Salt Lick",
+        "url": "https://www.google.com/maps?cid=5057226800935049592"
+      },
+      {
         "label": "อุทยาน: อ่างสายศรและโป่งทุ่งกวาง",
         "url": "https://khaoyainationalpark.com/plan-your-visit/place-to-go"
       }
     ],
-    "maps": "https://maps.app.goo.gl/hwteHvmCtn6feYY66"
+    "mapCoords": [
+      14.4196556,
+      101.3716848
+    ],
+    "mapNote": "ตำแหน่งโป่งสัตว์ ไม่ใช่ทางเข้าหรือที่จอดรถ เข้าได้เฉพาะจุดที่อุทยานอนุญาต",
+    "mapQuery": "C99C+VM7 Pong Thung Kwang Salt Lick, Hin Tung, Mueang Nakhon Nayok District, Nakhon Nayok 26000",
+    "maps": "https://www.google.com/maps?cid=5057226800935049592"
   },
   {
     "id": 7,
@@ -324,11 +372,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Thong Somboon Club",
+        "url": "https://www.google.com/maps?cid=12661970295594730212"
+      },
+      {
         "label": "THAI MICE CONNECT: ไร่ทองสมบูรณ์",
         "url": "https://www.thaimiceconnect.com/business/detail/19786"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=%E0%B9%84%E0%B8%A3%E0%B9%88%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%A1%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%84%E0%B8%A5%E0%B8%B1%E0%B8%9A%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.7305281,
+      101.3900488
+    ],
+    "mapQuery": "119, Thong Somboon Club, Non A Ri, Pak Chong, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=12661970295594730212"
   },
   {
     "id": 9,
@@ -358,6 +415,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Pete Maze",
+        "url": "https://www.google.com/maps?cid=8142088178642071714"
+      },
+      {
         "label": "อบต.ขนงพระ: เอกสารท่องเที่ยวปี 2567",
         "url": "https://www.khanongpra.go.th/fileupload/2024-03-121127251335.pdf"
       },
@@ -366,7 +427,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://www.thaiticketmajor.com/venue/pete-maze.html"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=%E0%B8%9E%E0%B8%B4%E0%B8%8A%E0%B8%8D%E0%B9%8C%20%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%A7%E0%B8%87%E0%B8%81%E0%B8%95%20(Pete%20Maze"
+    "mapCoords": [
+      14.5791125,
+      101.4315909
+    ],
+    "mapQuery": "Pete Maze, 126 หมู่ที่ 11 ถนน ธนะรัชต์, Khanong Phra, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=8142088178642071714"
   },
   {
     "id": 10,
@@ -396,6 +462,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด The Bonanza Exotic Park",
+        "url": "https://www.google.com/maps?cid=14177136538801013844"
+      },
+      {
         "label": "เว็บไซต์ผู้ประกอบการ: เวลาเปิดและติดต่อ",
         "url": "https://bonanzakhaoyai.thebonanzakhaoyai.com/exotic-zoo/"
       },
@@ -404,7 +474,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://www.thailandtourismdirectory.go.th/attraction/83333"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Bonanza%20Exotic%20Park%20%2F%20Exotic%20Zoo%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5827755,
+      101.4401334
+    ],
+    "mapQuery": "236, The Bonanza Exotic Park, หมู่ที่ 5, Khanong Phra, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=14177136538801013844"
   },
   {
     "id": 11,
@@ -434,11 +509,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Scenical World Khao Yai",
+        "url": "https://www.google.com/maps?cid=260257857832115138"
+      },
+      {
         "label": "Scenical World: LINE Official",
         "url": "https://page.line.me/awn8345m"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Scenical%20World%20Khao%20Yai%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5374498,
+      101.3781167
+    ],
+    "mapQuery": "Scenical World Khao Yai, 777 หมู่ 5 Thanaratch Rd, Mu Si, Pak Chong District, Nakhon Ratchasima 30450",
+    "maps": "https://www.google.com/maps?cid=260257857832115138"
   },
   {
     "id": 12,
@@ -464,15 +548,25 @@ window.KHAOYAI_PLACES = [
         "ใช้หมวกนิรภัยหรือเสื้อชูชีพตามกิจกรรม และทำตามคำแนะนำผู้ดูแล"
       ],
       "audience": "คนชอบกิจกรรมผจญภัยและพร้อมตรวจรายละเอียดก่อนจอง",
-      "notice": "รอยืนยันผู้ให้บริการและจุดคายัค"
+      "notice": "หมุดนี้ใช้เฉพาะ ATV กม.9 — จุดคายัคยังรอยืนยัน"
     },
     "references": [
+      {
+        "label": "Google Maps: หมุด ATV เขาใหญ่ กม.9",
+        "url": "https://www.google.com/maps?cid=1253173950874928765"
+      },
       {
         "label": "ชิลไปไหน: กิจกรรม ATV กม.9",
         "url": "https://chillpainai.com/public/products/9715"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=ATV%20%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B8%81%E0%B8%A1.9%20%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AD%E0%B8%94%E0%B9%80%E0%B8%A7%E0%B8%99%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%84%E0%B8%B2%E0%B8%A2%E0%B8%B1%E0%B8%84%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5982722,
+      101.392543
+    ],
+    "mapNote": "พิกัดนี้เป็น ATV เขาใหญ่ กม.9 เท่านั้น ไม่ใช่หมุดคายัค",
+    "mapQuery": "ATV เขาใหญ่ กม.9, ต 110 ม.6 Nong Nam Daeng, Pak Chong District, Nakhon Ratchasima 30450",
+    "maps": "https://www.google.com/maps?cid=1253173950874928765"
   },
   {
     "id": 13,
@@ -502,6 +596,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Sweet & Green Farm (ฟาร์มผัก ผลไม้ปลอดสาร ของฝากเขาใหญ่)",
+        "url": "https://www.google.com/maps?cid=16064369123852992122"
+      },
+      {
         "label": "Sweet & Green: ที่อยู่และกิจกรรมเก็บมะเขือเทศ",
         "url": "https://www.sweetandgreenfarm.com/content/7877/pickyourowntomatokhaoyai"
       },
@@ -510,7 +608,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://www.sweetandgreenfarm.com/farmshop"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Sweet%20%26%20Green%20Farm%20%E0%B8%AA%E0%B8%B2%E0%B8%82%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5848751,
+      101.2487564
+    ],
+    "mapQuery": "Sweet & Green Farm (ฟาร์มผัก ผลไม้ปลอดสาร ของฝากเขาใหญ่), 108 หมู่ที่ 9 Wang Phoem, Phaya Yen, Pak Chong District, Nakhon Ratchasima 30320",
+    "maps": "https://www.google.com/maps?cid=16064369123852992122"
   },
   {
     "id": 14,
@@ -578,6 +681,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Hokkaido Flower Park Khaoyai",
+        "url": "https://www.google.com/maps?cid=6858359246393832874"
+      },
+      {
         "label": "TripNiceDay: ตารางเปิดที่ยังต้องตรวจเทียบ",
         "url": "https://www.tripniceday.com/place/สวนดอกไม้"
       },
@@ -586,35 +693,44 @@ window.KHAOYAI_PLACES = [
         "url": "https://wanderlog.com/place/details/1981963/hokkaido-flower-park-khaoyai"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Hokkaido%20Flower%20Park%20Khaoyai%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5424272,
+      101.4069224
+    ],
+    "mapQuery": "Hokkaido Flower Park Khaoyai, 88 8, Mu Si, Pak Chong District, Nakhon Ratchasima 30450",
+    "maps": "https://www.google.com/maps?cid=6858359246393832874"
   },
   {
     "id": 16,
     "title": "Take Me Home Park Khaoyai",
     "category": "ศิลปะและสวนดอกไม้",
     "file": "สถานที่/16-take-me-home.md",
-    "zone": "ปากช่อง / แนวเส้นปากช่อง–วังน้ำเขียว (รอยืนยันหมุด)",
-    "address": "อ.ปากช่อง; เอกสารท่องเที่ยวระบุเส้นปากช่อง–วังน้ำเขียว ไม่ใช่หลักฐานยืนยันที่ตั้งหมูสีตามต้นฉบับ",
-    "description": "สวนดอกไม้และคาเฟ่ธีมเครื่องบิน เป็นแนวสถานที่เที่ยวที่เน้นฉากถ่ายรูปและการนั่งพัก แต่ตำแหน่งกับวันเปิดยังต้องยืนยัน",
+    "zone": "ปากช่อง / หมุดร้านตามที่ผู้ใช้ยืนยัน",
+    "address": "อ.ปากช่อง จ.นครราชสีมา ตามหมุดร้านที่ผู้ใช้ยืนยัน",
+    "description": "สวนดอกไม้และคาเฟ่ธีมเครื่องบิน เป็นแนวสถานที่เที่ยวที่เน้นฉากถ่ายรูปและการนั่งพัก หมุดร้านยืนยันแล้ว ส่วนวันเปิดและบริการยังควรสอบถามร้าน",
     "time": "1–2 ชั่วโมง — เป็นข้อเสนอสำหรับจัดแผน ไม่ใช่ระยะเวลาจากผู้ประกอบการ",
     "guide": {
-      "about": "สวนดอกไม้และคาเฟ่ธีมเครื่องบิน เป็นแนวสถานที่เที่ยวที่เน้นฉากถ่ายรูปและการนั่งพัก แต่ตำแหน่งกับวันเปิดยังต้องยืนยัน",
+      "about": "สวนดอกไม้และคาเฟ่ธีมเครื่องบิน เป็นแนวสถานที่เที่ยวที่เน้นฉากถ่ายรูปและการนั่งพัก หมุดร้านยืนยันแล้ว ส่วนวันเปิดและบริการยังควรสอบถามร้าน",
       "activities": "ถ่ายภาพกับธีมเครื่องบิน เดินชมสวน และแวะคาเฟ่ตามบริการที่เปิด",
       "pros": [
         "มีธีมเครื่องบินที่ช่วยให้ฉากภาพต่างจากคาเฟ่ทั่วไป",
         "รวมการเดินชมและนั่งพักไว้ในจุดเดียวเมื่อมีบริการ"
       ],
       "cons": [
-        "หมุดยังไม่ยืนยัน จึงยังประเมินว่าขับแวะสะดวกแค่ไหนไม่ได้"
+        "พื้นที่ชมสวนเป็นกลางแจ้ง ควรตรวจสภาพดอกไม้และวันเปิดก่อนตั้งใจไปถ่ายรูป"
       ],
       "cautions": [
-        "ขอหมุดทางเข้าจริงและยืนยันวันเปิดจากร้าน",
+        "หมุดร้านยืนยันจากลิงก์ผู้ใช้แล้ว ให้เช็กวันเปิดและทางเข้าที่ร้านใช้จริง",
         "ตรวจภาพสวนปัจจุบัน และไม่ขึ้นพร็อพนอกจุดที่อนุญาต"
       ],
       "audience": "คนชอบฉากถ่ายรูปธีมเฉพาะและสวนดอกไม้",
-      "notice": "รอยืนยันหมุดและวันเปิดจากร้าน"
+      "notice": "หมุดร้านยืนยันแล้ว — วันเปิดและบริการควรสอบถามร้าน"
     },
     "references": [
+      {
+        "label": "Google Maps: หมุดที่ผู้ใช้ยืนยัน",
+        "url": "https://www.google.com/maps?cid=12073869365713181853"
+      },
       {
         "label": "นิตยสารทิศไทย กุมภาพันธ์ 2569: เส้นทางที่เผยแพร่",
         "url": "https://www.nif-tidthai.org/wp-content/uploads/2026/02/tidthai63.pdf"
@@ -624,7 +740,13 @@ window.KHAOYAI_PLACES = [
         "url": "https://www.tripniceday.com/place/take-me-home-park"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Take%20Me%20Home%20Park%20Khaoyai%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.6530812,
+      101.4671596
+    ],
+    "mapNote": "หมุดร้านตามลิงก์ที่ผู้ใช้ยืนยัน วันที่ 13 ตุลาคม 2569",
+    "mapQuery": "Take Me Home Park Khaoyai ปากช่อง นครราชสีมา",
+    "maps": "https://www.google.com/maps?cid=12073869365713181853"
   },
   {
     "id": 17,
@@ -654,6 +776,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Floryday Khao Yai: Cafe & Flower",
+        "url": "https://www.google.com/maps?cid=5136446647500704168"
+      },
+      {
         "label": "Wongnai: ที่ตั้ง Floryday",
         "url": "https://www.wongnai.com/restaurants/1980169my-floryday-khaoyai-cafe-flower"
       },
@@ -662,7 +788,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://wanderlog.com/place/details/4991049/floryday-khaoyai--cafe--flower"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Floryday%20Khaoyai%3A%20Cafe%20%26%20Flower%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5163519,
+      101.5187453
+    ],
+    "mapQuery": "82, Floryday Khao Yai: Cafe & Flower, Nong Chok, Pong Ta Long, Pak Chong District, Nakhon Ratchasima 30450",
+    "maps": "https://www.google.com/maps?cid=5136446647500704168"
   },
   {
     "id": 27,
@@ -692,11 +823,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด BaanKhaoFae Farm Eatery & Coffee",
+        "url": "https://www.google.com/maps?cid=6074785724429722449"
+      },
+      {
         "label": "Wongnai: บ้านข้าวแฝ่",
         "url": "https://www.wongnai.com/restaurants/2622401MU-baan-khao-fae-บ้านข้าวแฝ่"
       }
     ],
-    "maps": "https://maps.app.goo.gl/UCiZu8hsU6vLMxhbA"
+    "mapCoords": [
+      14.5798091,
+      101.3819452
+    ],
+    "mapQuery": "60 BaanKhaoFae Farm Eatery & Coffee, Nong Makrut, Nong Nam Daeng, Pak Chong District, Nakhon Ratchasima 30450",
+    "maps": "https://www.google.com/maps?cid=6074785724429722449"
   },
   {
     "id": 29,
@@ -726,11 +866,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด StardoiFarm Khaoyai",
+        "url": "https://www.google.com/maps?cid=3028916594837141461"
+      },
+      {
         "label": "Wongnai: Stardoi Farm",
         "url": "https://www.wongnai.com/restaurants/3049812mc-stardoi-farm-khao-yai"
       }
     ],
-    "maps": "https://maps.app.goo.gl/byd5htU9uLnZoqex5"
+    "mapCoords": [
+      14.5463125,
+      101.4443125
+    ],
+    "mapQuery": "StardoiFarm Khaoyai, 161 2, Mu Si, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=3028916594837141461"
   },
   {
     "id": 32,
@@ -760,6 +909,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด เรือดอกไม้ - ณ สะหวาน เขาใหญ่",
+        "url": "https://www.google.com/maps?cid=11044444231446923439"
+      },
+      {
         "label": "Cafe Story Thailand: โพสต์ที่ผู้ใช้ส่ง",
         "url": "https://www.facebook.com/cafestorythailand/posts/1635658194798486/"
       },
@@ -776,7 +929,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://www.lemon8-app.com/%40lllove992/7676067608860344840?region=th"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Na%20sa%20waan%20khaoyai%20วังกะทะ%20ปากช่อง"
+    "mapCoords": [
+      14.5518953,
+      101.5733775
+    ],
+    "mapQuery": "HH2F+R42 เรือดอกไม้ - ณ สะหวาน เขาใหญ่ DPT. Nakhon Ratchasima 2213 Rd Nong Khwang, Wang Katha, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=11044444231446923439"
   },
   {
     "id": 22,
@@ -806,6 +964,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Midwinter Khaoyai",
+        "url": "https://www.google.com/maps?cid=16280170216089450737"
+      },
+      {
         "label": "Tripadvisor: ที่อยู่ร้าน",
         "url": "https://www.tripadvisor.com.sg/Restaurant_Review-g641719-d7177004-Reviews-Midwinter_Khao_Yai-Pak_Chong_Pak_Chong_District_Nakhon_Ratchasima_Province.html"
       },
@@ -814,7 +976,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://www.midwinterofficial.com/"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Midwinter%20Khao%20Yai%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.6170708,
+      101.4069015
+    ],
+    "mapQuery": "88 Midwinter Khaoyai, 88 หมู่ที่ 10 Thanaratch Rd Khlong Chai, Nong Nam Daeng, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=16280170216089450737"
   },
   {
     "id": 23,
@@ -844,11 +1011,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Ribs mannn",
+        "url": "https://www.google.com/maps?cid=9583456566514191361"
+      },
+      {
         "label": "Ribs Mannn: Contact",
         "url": "https://www.ribs-mannn.com/contact/"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Ribs%20Mannn%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.6343112,
+      101.4117469
+    ],
+    "mapQuery": "55 Ribs mannn, 5 Thanaratch Rd Wa Ka Chiao, Nong Nam Daeng, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=9583456566514191361"
   },
   {
     "id": 24,
@@ -878,6 +1054,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Prime 19 Khao Yai",
+        "url": "https://www.google.com/maps?cid=2342328422379985418"
+      },
+      {
         "label": "Wongnai: ร้าน Prime 19",
         "url": "https://www.wongnai.com/restaurants/299815Mc-prime-19-khaoyai-khaoyai"
       },
@@ -886,7 +1066,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://prime19.sino.co.th/prime19/Prime19_menu.pdf"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Prime%2019%20Khaoyai%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5372355,
+      101.3783948
+    ],
+    "mapQuery": "Prime 19 Khao Yai, 777 หมู่ 5 ศูนย์การค้ากรีนเนอรี่ปาร์คมอลล์ หมูสี Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=2342328422379985418"
   },
   {
     "id": 26,
@@ -916,11 +1101,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด หอมกับข้าว - hormkubkao",
+        "url": "https://www.google.com/maps?cid=2187249739616780752"
+      },
+      {
         "label": "Wongnai: หอมกับข้าว",
         "url": "https://www.wongnai.com/restaurants/1124820wj-หอมกับข้าว-1"
       }
     ],
-    "maps": "https://maps.app.goo.gl/wVdoKVTRLq7FFbcP7"
+    "mapCoords": [
+      14.7006731,
+      101.4080992
+    ],
+    "mapQuery": "PC25+76H หอมกับข้าว - hormkubkao Mittraphap Sai Kao Rd, Tambon Pak Chong, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=2187249739616780752"
   },
   {
     "id": 30,
@@ -950,11 +1144,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Suan Mon (Mookrata)",
+        "url": "https://www.google.com/maps?cid=5579009089861392307"
+      },
+      {
         "label": "Google Maps: สวนหม่อนหมูกระทะ เขาใหญ่",
         "url": "https://maps.app.goo.gl/zU1J9GwyzQAwdwHC9"
       }
     ],
-    "maps": "https://maps.app.goo.gl/zU1J9GwyzQAwdwHC9"
+    "mapCoords": [
+      14.5411077,
+      101.489084
+    ],
+    "mapQuery": "Suan Mon (Mookrata), 407 Mu Si, Pak Chong District, Nakhon Ratchasima 30450",
+    "maps": "https://www.google.com/maps?cid=5579009089861392307"
   },
   {
     "id": 18,
@@ -984,11 +1187,20 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Lung Por Tuad (Monk)",
+        "url": "https://www.google.com/maps?cid=13427990813612816209"
+      },
+      {
         "label": "มูลนิธิศิษย์หลวงพ่อทวดเขาใหญ่",
         "url": "https://www.lpt.or.th/"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%20%E0%B8%AD%E0%B8%B2%E0%B8%93%E0%B8%B2%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%97%E0%B8%A7%E0%B8%94%20%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5775543,
+      101.4306863
+    ],
+    "mapQuery": "พุทธอุทยาน อาณาจักรหลวงปู่ทวด ต.หมูสี อ.ปากช่อง",
+    "maps": "https://www.google.com/maps?cid=13427990813612816209"
   },
   {
     "id": 19,
@@ -1018,6 +1230,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Wat Pa Phu Hai Long",
+        "url": "https://www.google.com/maps?cid=868030635159070917"
+      },
+      {
         "label": "มหาวิทยาลัยเทคโนโลยีสุรนารี: ข้อมูลวัด",
         "url": "https://nm.sut.ac.th/koratdata/?data_id=2683&m=detail"
       },
@@ -1026,7 +1242,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://gotoisan.com/explore/25"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%A0%E0%B8%B9%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%A5%E0%B8%87%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.5320101,
+      101.5783554
+    ],
+    "mapQuery": "GHJH+R85 Wat Pa Phu Hai Long, Sap Samran, Wang Katha, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=868030635159070917"
   },
   {
     "id": 20,
@@ -1056,11 +1277,21 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุดที่ผู้ใช้ยืนยัน",
+        "url": "https://www.google.com/maps?cid=7037146943040972350"
+      },
+      {
         "label": "ศูนย์วิจัยข้าวโพดและข้าวฟ่างแห่งชาติ",
         "url": "https://suwanfarm.agr.ku.ac.th/"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=%E0%B9%84%E0%B8%A3%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%20%2F%20%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B1%E0%B8%A2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%82%E0%B8%9E%E0%B8%94%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%9F%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.6422337,
+      101.3151658
+    ],
+    "mapNote": "หมุดศูนย์วิจัยตามที่ผู้ใช้เลือก ไม่ใช่หมุดร้านของฝากด้านหน้า",
+    "mapQuery": "ศูนย์วิจัยข้าวโพดและข้าวฟ่างแห่งชาติ (ไร่สุวรรณ) ปากช่อง นครราชสีมา",
+    "maps": "https://www.google.com/maps?cid=7037146943040972350"
   },
   {
     "id": 21,
@@ -1068,7 +1299,7 @@ window.KHAOYAI_PLACES = [
     "category": "ของฝากและช้อปปิ้ง",
     "file": "สถานที่/21-premium-outlet.md",
     "zone": "มิตรภาพ / หนองน้ำแดง",
-    "address": "ถนนมิตรภาพ ต.หนองน้ำแดง อ.ปากช่อง; เอกสารร้านค้าเก่าระบุ 888 หมู่ 7",
+    "address": "299 ถนนมิตรภาพ ต.ปากช่อง อ.ปากช่อง จ.นครราชสีมา ตามหมุด Google Maps ที่ตรวจเพิ่ม",
     "description": "ศูนย์ช้อปปิ้งเอาท์เล็ทริมถนนมิตรภาพ เน้นเดินเลือกซื้อสินค้าจากร้านในโครงการ",
     "time": "1–2 ชั่วโมง — เป็นข้อเสนอสำหรับจัดแผน ไม่ใช่ระยะเวลาจากผู้ประกอบการ",
     "guide": {
@@ -1090,6 +1321,10 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Premium Outlet Khaoyai at Pak Chong",
+        "url": "https://www.google.com/maps?cid=16986043808769076940"
+      },
+      {
         "label": "KTC: เอกสารที่อยู่ร้านในโครงการ (เก่า)",
         "url": "https://www.ktc.co.th/sites/cs/assets/privileges/document/ALL-BRANCH-SPORTS-REV-Jan.pdf"
       },
@@ -1098,7 +1333,12 @@ window.KHAOYAI_PLACES = [
         "url": "https://www.outletmallthailand.com/our_branch/3"
       }
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Premium%20Outlet%20Khao%20Yai%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2"
+    "mapCoords": [
+      14.659101,
+      101.3927522
+    ],
+    "mapQuery": "Premium Outlet Khaoyai at Pak Chong, 299 Mittraphap Rd Talat Noina, Tambon Pak Chong, Pak Chong District, Nakhon Ratchasima 30130",
+    "maps": "https://www.google.com/maps?cid=16986043808769076940"
   },
   {
     "id": 28,
@@ -1128,43 +1368,19 @@ window.KHAOYAI_PLACES = [
     },
     "references": [
       {
+        "label": "Google Maps: หมุด Willow Tree House Khao-Yai",
+        "url": "https://www.google.com/maps?cid=1330693050727115528"
+      },
+      {
         "label": "Booking.com: Willow Tree House",
         "url": "https://www.booking.com/hotel/th/willow-tree-house-khaoyai.html"
       }
     ],
-    "maps": "https://maps.app.goo.gl/dWMkYwa5zjmEsirv9"
-  },
-  {
-    "id": 25,
-    "title": "Palio Khao Yai (รายการจากหมายเหตุ)",
-    "category": "รายการพักไว้",
-    "file": "สถานที่/25-palio.md",
-    "zone": "หมูสี / โครงการเดิม",
-    "address": "โครงการเดิมบนถนนธนะรัชต์ ต.หมูสี อ.ปากช่อง",
-    "description": "โครงการช้อปปิ้งและแลนด์มาร์กถ่ายรูปที่ปรากฏในข้อมูลท่องเที่ยวเก่าของเขาใหญ่ ปัจจุบันยังไม่ยืนยันว่ารูปแบบเดิมเปิดให้เข้าชม",
-    "time": "พักไว้ — เป็นข้อเสนอสำหรับจัดแผน ไม่ใช่ระยะเวลาจากผู้ประกอบการ",
-    "guide": {
-      "about": "โครงการช้อปปิ้งและแลนด์มาร์กถ่ายรูปที่ปรากฏในข้อมูลท่องเที่ยวเก่าของเขาใหญ่ ปัจจุบันยังไม่ยืนยันว่ารูปแบบเดิมเปิดให้เข้าชม",
-      "activities": "เก็บไว้เป็นข้อมูลอ้างอิง ยังไม่กำหนดกิจกรรมจนยืนยันว่าเข้าชมได้",
-      "pros": [
-        "เป็นข้อมูลสำหรับคนสนใจแลนด์มาร์กเดิมของเขาใหญ่"
-      ],
-      "cons": [
-        "ภาพและรีวิวเก่าอาจไม่ตรงกับพื้นที่หรือบริการที่พบในปัจจุบัน"
-      ],
-      "cautions": [
-        "อย่าขับไปโดยคาดหวังว่าร้านและจุดถ่ายรูปเดิมเปิดครบ",
-        "ต้องมีข้อมูลเปิดจากผู้ดูแลปัจจุบันก่อนเข้า และไม่เข้าเขตที่ปิด"
-      ],
-      "audience": "คนสนใจประวัติสถานที่เดิม มากกว่าจุดแวะที่รับรองว่าเที่ยวได้",
-      "notice": "รายการพักไว้ — ยังไม่ยืนยันเปิดให้เข้าชม"
-    },
-    "references": [
-      {
-        "label": "Lovethailand: Palio Khao Yai",
-        "url": "https://www.lovethailand.org/travel/en/46-Nakhon-Ratchasima/3174-Palio-Khao-Yai.html"
-      }
+    "mapCoords": [
+      14.5350329,
+      101.3934729
     ],
-    "maps": "https://www.google.com/maps/search/?api=1&query=Palio%20Khao%20Yai%20(%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8"
+    "mapQuery": "214 Willow Tree House Khao-Yai Mu Si, Pak Chong District, Nakhon Ratchasima 30450",
+    "maps": "https://www.google.com/maps?cid=1330693050727115528"
   }
 ];

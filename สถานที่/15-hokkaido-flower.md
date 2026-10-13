@@ -37,6 +37,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ศิลปะและสวนดอกไม้
+- **พิกัดแสดงบนแผนที่:** 14.5424272, 101.4069224
+- **แหล่งพิกัด:** [Google Maps: Hokkaido Flower Park Khaoyai](https://www.google.com/maps?cid=6858359246393832874) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** Hokkaido Flower Park Khaoyai, 88 8, Mu Si, Pak Chong District, Nakhon Ratchasima 30450
 - **โซน:** หมูสี / นอกอุทยาน
 - **ที่ตั้งที่ใช้วางแผน:** ต.หมูสี อ.ปากช่อง จ.นครราชสีมา
 - **ลักษณะสถานที่:** สวนดอกไม้และคาเฟ่
@@ -58,6 +61,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด Hokkaido Flower Park Khaoyai](https://www.google.com/maps?cid=6858359246393832874)
 - [TripNiceDay: ตารางเปิดที่ยังต้องตรวจเทียบ](https://www.tripniceday.com/place/สวนดอกไม้)
 
 - [Wanderlog: Hokkaido Flower Park](https://wanderlog.com/place/details/1981963/hokkaido-flower-park-khaoyai)

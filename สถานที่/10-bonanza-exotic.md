@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ฟาร์มและกิจกรรม
+- **พิกัดแสดงบนแผนที่:** 14.5827755, 101.4401334
+- **แหล่งพิกัด:** [Google Maps: The Bonanza Exotic Park](https://www.google.com/maps?cid=14177136538801013844) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** 236, The Bonanza Exotic Park, หมู่ที่ 5, Khanong Phra, Pak Chong District, Nakhon Ratchasima 30130
 - **โซน:** ขนงพระ / Bonanza
 - **ที่ตั้งที่ใช้วางแผน:** โซน Bonanza อ.ปากช่อง จ.นครราชสีมา
 - **ลักษณะสถานที่:** สวนสัตว์ขนาดเล็กในโครงการ Bonanza
@@ -54,6 +57,8 @@
 
 ## แหล่งข้อมูล
 
+
+- [Google Maps: หมุด The Bonanza Exotic Park](https://www.google.com/maps?cid=14177136538801013844)
 - [เว็บไซต์ผู้ประกอบการ: เวลาเปิดและติดต่อ](https://bonanzakhaoyai.thebonanzakhaoyai.com/exotic-zoo/)
 - [กระทรวงท่องเที่ยว: Bonanza Exotic Park](https://www.thailandtourismdirectory.go.th/attraction/83333)
 - [บันทึกข้อมูลตั้งต้นและผลตรวจสอบ](../บันทึกตรวจสอบ.md)

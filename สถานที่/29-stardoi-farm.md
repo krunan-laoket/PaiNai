@@ -33,6 +33,9 @@
 ## ข้อมูลสำหรับเลือกเที่ยว
 
 - **หมวด:** ฟาร์มและคาเฟ่
+- **พิกัดแสดงบนแผนที่:** 14.5463125, 101.4443125
+- **แหล่งพิกัด:** [Google Maps: StardoiFarm Khaoyai](https://www.google.com/maps?cid=3028916594837141461) — ตรวจชื่อและตำแหน่ง 13 ตุลาคม 2569
+- **คำค้นแผนที่:** StardoiFarm Khaoyai, 161 2, Mu Si, Pak Chong District, Nakhon Ratchasima 30130
 - **โซน:** หมูสี / นอกอุทยาน
 - **ที่ตั้ง:** 161/2 ต.หมูสี อ.ปากช่อง ตามหมุดผู้ใช้
 - **ลักษณะ:** ฟาร์มแกะและคาเฟ่; รายการผู้ใช้กล่าวถึงม้าหมุน
@@ -54,6 +57,8 @@
 
 ## อ้างอิง
 
+
+- [Google Maps: หมุด StardoiFarm Khaoyai](https://www.google.com/maps?cid=3028916594837141461)
 - [Wongnai: Stardoi Farm](https://www.wongnai.com/restaurants/3049812mc-stardoi-farm-khao-yai)
 - รายการจากผู้ใช้พร้อมเวลาช่วงในวิดีโอ เป็นข้อมูลตั้งต้น ไม่ใช่หลักฐานวันที่เปิดปัจจุบัน
 
