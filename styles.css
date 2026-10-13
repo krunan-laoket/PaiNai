@@ -170,7 +170,7 @@ h1{font-size:21px}
   .place>span:last-child{min-width:0;flex:1}
   .place strong{font-size:13px;line-height:1.6;overflow-wrap:anywhere}
   .place small{font-size:11px;margin-top:2px}
-  .selected,
+  .selected{position:fixed;left:8px;right:8px;bottom:8px;width:auto;max-height:65vh;max-height:65svh;padding:22px 18px max(18px,env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain;border-radius:26px 26px 20px 20px;box-shadow:0 -8px 50px #29453642;z-index:20;scrollbar-width:none}
   .selected::-webkit-scrollbar{display:none}
   .selected:before{top:8px;left:calc(50% - 20px);width:40px;height:4px;border-radius:6px;background:#d5d6c6;transform:none}
   .selected h2{font-size:20px;margin:10px 28px 10px 0;overflow-wrap:anywhere}
@@ -196,19 +196,17 @@ h1{font-size:21px}
 }
 @media(max-width:620px) and (orientation:landscape){
   .mapboard{height:400px}
-  .selected,
+  .selected{max-height:80svh}
 }
 
 
 
 
-/* สลับภาพร่างกับ Google Maps ที่ฝัง */
+/* สลับภาพร่างกับ OpenStreetMap */
 .views{display:flex;gap:6px}
 .views button{background:#fffcf1ef;font-size:12px}
 .views button[aria-pressed=true]{background:#51775a;color:white}
 .realmap{position:absolute;inset:0;background:#eaf0dd;z-index:1}
-.realmap iframe{width:100%;height:100%;border:0}
-.realmap .hint{position:absolute;top:74px;left:20px;background:#fffdf5;padding:8px 12px;border-radius:12px;font-size:11px;max-width:300px}
 .mapboard.real .selected{left:auto;right:23px}
 .mapboard.real .controls{display:none}
 @media(max-width:850px){.mapboard.real .selected{right:12px}}
@@ -216,6 +214,33 @@ h1{font-size:21px}
 .views{display:grid;grid-template-columns:1fr 1fr;gap:5px;background:#fffdf3db;border-radius:15px;padding:4px}
 .views button{border:0;border-radius:11px;min-height:42px;font-size:12px;padding:7px 8px;background:transparent}
 .realmap{top:135px}
-.realmap .hint{top:8px;left:8px;right:8px;max-width:none;font-size:9px;line-height:1.5;padding:6px 9px;background:#fffdf4e8}
 .mapboard.real .selected{left:8px;right:8px}
+}
+
+.osm-canvas{width:100%;height:100%;background:#e7eddb;z-index:0;font-family:"Mali",Tahoma,sans-serif}
+.osm-canvas .leaflet-tile-pane{filter:saturate(.8)}
+.osm-pin{background:none;border:0}
+.osm-sticker{height:46px;width:46px;border:3px solid #fffdf5;border-radius:16px;background:var(--pin-tint);box-shadow:0 4px 10px #38553538;position:relative;display:flex;align-items:center;justify-content:center}
+.osm-sticker:after{content:'';position:absolute;bottom:-8px;left:15px;width:11px;height:11px;transform:rotate(45deg);background:var(--pin-tint);border-right:3px solid #fffdf5;border-bottom:3px solid #fffdf5}
+.osm-glyph{font-size:25px;line-height:1;padding-bottom:4px}
+.osm-number{position:absolute;bottom:-3px;right:-6px;background:#fffdf5;border:1px solid #e4decf;border-radius:9px;min-width:18px;height:18px;text-align:center;font:700 10px/16px "Mali",sans-serif;color:#496949;z-index:1}
+.osm-sticker.is-selected{outline:3px solid #d89573;box-shadow:0 4px 16px #ad735858}
+.osm-tooltip{border:1px solid #e2decd;border-radius:10px;background:#fffaf0;color:#415b44;box-shadow:0 3px 12px #4b604222;font:12px/1.6 "Mali",Tahoma,sans-serif}
+.osm-tools{position:absolute;top:90px;left:16px;z-index:2;display:flex;gap:6px}
+.osm-tools button{font-size:11px;background:#fffdf3ed;border-radius:12px;box-shadow:0 2px 8px #34473114}
+.osm-status{position:absolute;bottom:25px;left:12px;max-width:calc(100% - 130px);z-index:2;background:#fffaf0ed;padding:7px 10px;border:1px solid #e3decb;border-radius:12px;font-size:10px;color:#65735b;pointer-events:none}
+.mapboard.real .mapfoot{display:none}
+.mapboard.real .leaflet-top{top:82px}
+.osm-canvas .leaflet-control-zoom{border:0;box-shadow:0 3px 12px #34473125;border-radius:13px;overflow:hidden}
+.osm-canvas .leaflet-control-zoom a{width:40px;height:40px;line-height:40px;background:#fffdf2;color:#52734f;border-color:#e5e0cd}
+.osm-canvas .leaflet-control-attribution{font-size:9px;background:#fffaf0df}
+.map-load-error{padding:140px 22px;font-size:14px;text-align:center}
+.pending-coords{background:#fff2df;border-radius:10px;padding:8px 10px}
+@media(max-width:620px){
+  .realmap{top:135px}
+  .osm-tools{top:10px;left:10px;right:55px;gap:5px}
+  .osm-tools button{min-height:40px;padding:7px 8px;font-size:10px}
+  .mapboard.real .leaflet-top{top:56px}
+  .osm-status{bottom:27px;left:8px;font-size:9px;padding:5px 8px;max-width:calc(100% - 16px)}
+  .osm-canvas .leaflet-control-zoom a{width:44px;height:44px;line-height:44px}
 }
