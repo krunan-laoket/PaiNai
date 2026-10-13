@@ -106,3 +106,9 @@
 ## แผนที่ OpenStreetMap
 
 พื้นแผนที่ออนไลน์จาก © OpenStreetMap contributors; ใช้ Leaflet 1.9.4 ซึ่งเก็บไว้ใน `assets/vendor/leaflet/` พร้อมใบอนุญาต ไม่มีการดาวน์โหลดพื้นแผนที่เก็บไว้ใช้ออฟไลน์ และปุ่มนำทาง/แผนที่ภายนอกยังใช้ Google Maps
+
+## ไอคอนสำหรับแอปและ Shortcut
+
+มี `manifest.webmanifest` ระบุชื่อแอป “เที่ยวเขาใหญ่” และเปิดแบบ standalone พร้อมไอคอน PNG ขนาด 192/512, ไอคอน maskable 512 สำหรับการครอบไอคอนบน Android, Apple touch icon 180 และ ICO หลายขนาดสำหรับ Desktop ใช้ลายรถกับภูเขาชุดเดียวกับ favicon
+
+หลัง deploy ไฟล์ทั้งหมดบน Cloudflare Pages แบบ HTTPS ให้เปิดเว็บด้วย Chrome/Edge แล้วเลือกติดตั้งแอปจากเมนูเบราว์เซอร์ บน iPhone ใช้เมนูแชร์ → เพิ่มไปยังหน้าจอโฮม การเพิ่ม manifest และไอคอนยังไม่ได้เพิ่มโหมดออฟไลน์ให้เว็บ
