@@ -236,6 +236,37 @@ h1{font-size:21px}
 .osm-canvas .leaflet-control-attribution{font-size:9px;background:#fffaf0df}
 .map-load-error{padding:140px 22px;font-size:14px;text-align:center}
 .pending-coords{background:#fff2df;border-radius:10px;padding:8px 10px}
+
+/* รายละเอียดสำหรับนักท่องเที่ยว */
+.dialoghead{z-index:2;font-weight:600}
+.guide-category{font-size:11px;color:#79836c;margin-top:14px}
+.detail .guide-title{line-height:1.5;margin:8px 0 16px}
+.detail .guide-intro{font-size:15px;line-height:1.95;margin:0 0 20px;color:#405542}
+.guide-section{margin:20px 0}
+.detail .guide-section h3{margin:0 0 9px;font-size:16px}
+.detail .guide-section p,.detail .guide-section li{font-size:14px;line-height:1.85;color:#52634e}
+.guide-section p{margin:0}
+.guide-section ul{margin:0;padding-left:20px}
+.guide-section li+li{margin-top:7px}
+.guide-comparison{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.guide-comparison .guide-section{margin:0;border:1px solid #dde6d0;border-radius:17px;background:#eff4e5;padding:16px}
+.guide-comparison .guide-cons{border-color:#eadfce;background:#fbf1e4}
+.guide-cautions{border-left:3px solid #d6b572;padding:4px 0 4px 14px}
+.detail .guide-notice{padding:12px 14px;background:#fff0d7;border:1px solid #eed9b0;border-radius:13px;color:#876436;font-size:13px;line-height:1.7;margin:0 0 16px}
+.guide-info{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;margin:20px 0;padding:15px 0;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);font-size:12px;line-height:1.8}
+.guide-info dt{color:#7d866f}
+.guide-info dd{margin:0;color:#4e614c}
+.guide-references{margin-top:24px;padding-top:16px;border-top:1px dashed var(--line)}
+.guide-references summary{cursor:pointer;font-size:12px;color:#788368;padding:8px 0;min-height:38px}
+.guide-references p,.guide-references li{font-size:11px!important;line-height:1.85}
+.guide-references a{overflow-wrap:anywhere}
+@media(max-width:620px){
+  .guide-comparison{grid-template-columns:1fr;gap:10px}
+  .guide-comparison .guide-section{padding:14px 15px}
+  .detail .guide-intro{font-size:15px}
+  .detail .guide-section h3{font-size:16px}
+  .guide-info{grid-template-columns:90px minmax(0,1fr)}
+}
 @media(max-width:620px){
   .realmap{top:135px}
   .osm-tools{top:10px;left:10px;right:55px;gap:5px}
